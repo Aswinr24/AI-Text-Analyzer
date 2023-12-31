@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>AI Text Analyser</title>
+</head>
+<body>
+    <div class="bg-white">
+     <nav class="flex justify-center">
+      <h1 class="m-10 text-3xl font-bold font-mono text-green-700">AI Text Summarizer</h1> 
+      </nav>
+      <p class="px-10 font-mono"> Welcome to the AI Text Summarizer App! This app leverages the power of Artificial Intelligence APIs to provide concise summaries of long texts. Whether you have a lengthy article, research paper, or any other text document that you want to summarize quickly, our app can assist you. </p>
+      <div class="p-10 grid md:grid-cols-2 gap-6">
+        <div class="text-area col-start-0 col-end-2">
+          <textarea id="text_to_summarize" name="text_to_summarize" rows="20" class="w-full block p-10 font-mono text-gray-900 border-2 rounded-lg border border-black focus:border-2 focus:border-green-700" id="text_to_summarize" name="text_to_summarize" placeholder="Paste in some text to summarize. (Min length is 200 chars. Max length is 100,000 chars.)" maxlength="100000"></textarea>
+          <button id="submit-button"  class="mt-5 w-full bg-green-700 hover:bg-green-900 text-white font-bold font-mono py-2 px-4 rounded" >
+            <span class="submit-button-text">Summarize</span>
+          </button>
+        </div>
+        <div class="text-box col-start-2 col-end-4"> 
+            <h2 class="text-2xl font-mono w-full">Text Summary:</h2>
+        <textarea id="summary" name="summarized_text" rows="18" class="w-full block p-10 font-mono text-gray-900 border-2 rounded-lg border border-black focus:border-2 focus:border-green-700" id="summary" name="summarized_text" placeholder="Summarized text will appear here"> </textarea>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
